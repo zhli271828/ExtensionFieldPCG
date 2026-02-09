@@ -19,10 +19,9 @@ Please manually delete it if a previous version of libOTe is installed in your c
 ## Running benchmarks
 Benchmarks:
 
+```
 cmake .
 make
-
-```
 ./main   --QA_Syndrome n Tests syndrome encoding of QA code of length 3^n
 ./main   --EA_Syndrome n Tests syndrome encoding of EA code of length 3^n
 ./main   --EC_Syndrome n Tests syndrome encoding of EC code of length 3^n
