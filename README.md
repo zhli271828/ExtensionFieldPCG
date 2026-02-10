@@ -1,5 +1,5 @@
 # Extension Field PCG
-The PCG implementation based on FFT transform over F2^128.
+The PCG implementation based on FFT transform over $\mathbb{F}_{2^{128}}$.
 
 ## Installing libOTe
 Our code is developed based on libOTe [libOTe](https://github.com/osu-crypto/libOTe). To install libOTe library, run the following command.
@@ -14,7 +14,9 @@ If installation requires sudo access, run the following command
 cd libOTe
 python build.py --all --install --sudo --boost --sodium --openssl -D FETCH_SODIUM=OFF -D SODIUM_MONTGOMERY=FALSE
 ```
-Please manually delete it if a previous version of libOTe is installed in your computer.
+
+## ⚠️ Important Warning
+Please manually delete it if a previous version of libOTe is installed in your computer. Pay attention to the file [KeccakP-1600-times4-SIMD256.o](libOTe/thirdparty/KyberOT/keccak4x/KeccakP-1600-times4-SIMD256.o) for libOTe.
 
 ## Running benchmarks
 Benchmarks:
